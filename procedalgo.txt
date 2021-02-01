@@ -1,0 +1,57 @@
+function read-size ( ): integer;
+var 
+n : integer 
+begin
+read(n)
+until( n<=0 or n=> 3)
+return n ;
+ end .
+  
+
+
+procedure dot_product ( var ps : integer ,  vect1, vect2 : array of integers )
+var 
+i , j  : integer ;
+
+begin
+ps = 0 ; 
+for ( i=0 , i< vect1.length , i++)
+    for ( j=0 , j< vect2.length , j++)
+       ps= ps+( vect1[i] * vect2[j])
+       end for 
+       end .
+
+
+
+
+function dot_product ( ps : integer ,  vect1, vect2 : array of integers ) : integer
+var 
+i , j  : integer ;
+
+begin
+ps = 0 ; 
+for ( i=0 , i< vect1.length , i++)
+    for ( j=0 , j< vect2.length , j++)
+       ps= ps+( vect1[i] * vect2[j])
+       end for 
+       end .
+
+
+algorithm orthogonal ()
+var
+vect1: array[]
+vect2 : array[]
+i , p ; intger 
+begin 
+vect 1 = arr1 
+vect 2 = arr2
+n:= read-size (vect1)
+n:= read-size (vect2)
+
+p = dot_product( vec1,vect2)
+ if p= 0 ;
+ write (" the vectors are orthogonal")
+  else
+  writz("the vectors are not orthogonal")
+  end if 
+  end 
